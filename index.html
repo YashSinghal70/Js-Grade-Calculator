@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+<div class="container">
+      <div >
+      <h1>Grade Calculator</h1>
+  </div>
+
+    <div class="row">
+    <label for="eng">English</label>
+    <input id="eng" type="text" placeholder="English">
+</div>
+
+<div class="row">
+    <label for="phy">Physics</label>
+    <input id="phy" type="text" placeholder="Physics">
+</div>
+
+<div class="row">
+    <label for="chem">Chemistry</label>
+    <input id="chem" type="text" placeholder="Chemistry">
+</div>
+
+<div class="row">
+    <select id="subject" onclick="ChangeSub()">
+        <option value="math">Maths</option>
+        <option value="biology">Biology</option>
+    </select>
+    <input id="mathbiomarks" type="text" placeholder="Enter marks">
+</div>
+
+<div class="row">
+    <select id="subject2" onclick="ChangeSubjectHindiComputer()">
+        <option value="computer">Computer</option>
+        <option value="hindi">Hindi</option>
+    </select>
+    <input id="comphindimarks" type="text" placeholder="Enter marks">
+</div>
+
+<div class="row">
+    <label for="sum">Sum</label>
+    <input id="sum" type="text" placeholder="Sum" readonly>
+</div>
+
+<div class="row">
+    <label for="per">Percentage</label>
+    <input id="per" type="text" placeholder="Percentage" readonly>
+</div>
+
+<div class="row">
+    <label for="remark">Remark</label>
+    <input id="remark" type="text" placeholder="Remark" readonly>
+</div>
+
+<div class="row">
+    <label for="grade">Grade</label>
+    <input id="grade" type="text" placeholder="Grade" readonly>
+</div>
+
+  <div class="btns">
+         <button onclick="Calculate()">Calculate</button>
+  <button onclick="ResetMarks()">Reset Marks</button>
+    </div>
+
+</div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
