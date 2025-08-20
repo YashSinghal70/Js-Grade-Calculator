@@ -26,11 +26,11 @@ if (eng ==='' || phy ==='' || chem ==='' || math ==='' || comp ==='') {
 
 
 
-
+// tofixed(2) number upto two ponits
 
   let Percentage =((total / 500) * 100).toFixed(2);
 
-  document.querySelector("#per").value=Percentage;
+  document.querySelector("#per").value=`${Percentage}%`;
 
   if(Percentage >=91 && Percentage <=100){
 document.querySelector("#remark").value="Outstanding"
@@ -69,7 +69,7 @@ else if(Percentage >=34 && Percentage <=40){
  document.querySelector("#grade").value="D"
 
 }
-else if(Percentage >33 ){
+else if(Percentage <=33 ){
  document.querySelector("#remark").value="Fail"
  document.querySelector("#grade").value="E"
 
@@ -78,14 +78,16 @@ else if(Percentage >33 ){
 
 }
 
+// Change Subjects betwwn two with placeholder : Maths And Biology
+
 // function ChangeSub() {
-//     let marks=document.querySelector("#marks")
+//     let marks=document.querySelector("#mathbiomarks")
 //     if(marks.placeholder === "math")
 //     {
-//         marks.setAttribute("placeholder", "biology");
+//         marks.setAttribute("placeholder", "math");
 //     }
 //     else{
-//      marks.setAttribute("placeholder", "math");
+//      marks.setAttribute("placeholder", "biology");
 //     }
 // }
 
